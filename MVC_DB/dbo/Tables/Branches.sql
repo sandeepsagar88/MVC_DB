@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[Branches] (
+    [BranchID]       INT            IDENTITY (1, 1) NOT NULL,
+    [BranchName]     NVARCHAR (MAX) NOT NULL,
+    [Company_ID]     INT            NULL,
+    [HOB]            NVARCHAR (MAX) NULL,
+    [BranchAddress]  NVARCHAR (MAX) NULL,
+    [MobileCode]     VARCHAR (50)   NULL,
+    [BranchMobileNo] NVARCHAR (MAX) NULL,
+    [PhoneCode]      VARCHAR (50)   NULL,
+    [BranchPhoneNo]  NVARCHAR (MAX) NULL,
+    [BranchEmailID]  NVARCHAR (MAX) NULL,
+    [BranchStrengh]  INT            NULL,
+    [City]           NVARCHAR (MAX) NULL,
+    [State]          NVARCHAR (MAX) NULL,
+    [Country]        NVARCHAR (MAX) NULL,
+    [CreateDate]     DATE           NULL,
+    [Creator]        NVARCHAR (MAX) NULL,
+    [Status]         INT            NULL,
+    [Website]        NVARCHAR (MAX) NULL,
+    [ActivationCode] NVARCHAR (50)  NULL,
+    [Logo]           VARCHAR (100)  NULL,
+    [IS_DELETED]     BIT            NULL,
+    [IS_ACTIVE]      BIT            NULL,
+    CONSTRAINT [PK__TBL_Branch__2D971CAC10566F31] PRIMARY KEY CLUSTERED ([BranchID] ASC)
+);
+
